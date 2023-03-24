@@ -3212,7 +3212,11 @@
 			"restart_policy": "unless-stopped",
 			"title": "Transmission-OpenVPN",
 			"type": 1,
-			"cap_add": "NET_ADMIN",
+			"cap_add": [
+				{
+					"NET_ADMIN",
+				}
+				],
 			"volumes": [
 				{
 					"bind": "/srv/dev-disk-by-label-media/Downloads",
