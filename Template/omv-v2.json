@@ -3029,7 +3029,7 @@
 			"title": "Transmission-OpenVPN",
 			"type": 1,
 			"cap_add": [
-				"NAT_ADMIN"
+				"NET_ADMIN"
 			],
 			"volumes": [{
 					"bind": "/srv/dev-disk-by-label-media/Downloads",
