@@ -2991,7 +2991,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "NORDBPN",
+					"default": "NORDVPN",
 					"description": "https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
 					"label": "OPENVPN_PROVIDER",
 					"name": "OPENVPN_PROVIDER"
