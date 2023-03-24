@@ -3181,7 +3181,7 @@
 					"name": "OPENVPN_PROVIDER"
 				},
 				{
-					"default": "",
+					"default": "karlmathias@gmail.com",
 					"label": "OPENVPN_USERNAME",
 					"name": "OPENVPN_USERNAME"
 				},
@@ -3194,6 +3194,11 @@
 					"default": "192.168.0.0/24",
 					"label": "LOCAL_NETWORK",
 					"name": "LOCAL_NETWORK"
+				},
+				{
+					"default": "NO",
+					"label": "NORDVPN_COUNTRY",
+					"name": "NORDVPN_COUNTRY",
 				}
 			],
 			"image": "haugene/transmission-openvpn:latest",
@@ -3207,6 +3212,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Transmission-OpenVPN",
 			"type": 1,
+			"cap_add": "NET_ADMIN",
 			"volumes": [
 				{
 					"bind": "/srv/dev-disk-by-label-media/Downloads",
